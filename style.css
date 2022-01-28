@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  background: rgb(81, 144, 240);
+}
+.container {
+  max-width: 100%;
+  margin: auto;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 15rem;
+  background: rgb(38, 119, 240);
+}
+li {
+  display: inline-block;
+  list-style: none;
+  margin-left: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 15rem;
+  background: rgb(4, 89, 216);
+  box-shadow: 1px 1px 4px 2px rgba(12, 13, 14, 0.75);
+}
+.top > div{
+    max-width: 70%;
+}
+.top > div h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.65rem;   
+}
+.wrapper div{
+ width: 4rem;
+ aspect-ratio: 1/1;
+ border: 0.65rem solid rgb(47, 191, 248);
+ border-radius: 5px;
+}
+
+.bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    padding: 1.5rem 15rem;
+    height: 100%;
+}
+.bottom div{
+    background: rgb(4, 89, 216);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 4px 4px 1px rgba(12, 13, 14, 0.75);
+}
+.bottom div p{
+    padding: 1rem 0;
+}
